@@ -29,6 +29,7 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
                     title: "Combining",
                     link: "/#operators/combining",
                     links: [
+                        { title: "And/Then/When", link:"/#operators/combining/and_then_when"},
                         { title: "Merge", link: "/#operators/combining/merge" },
                         { title: "Zip", link: "/#operators/combining/zip" }
                     ]

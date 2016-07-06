@@ -18,6 +18,14 @@ RxHubApp.config(['$routeProvider',
       when('/operators/combining', {
           templateUrl: 'prerendered/operators/combining/default.html',
       }).
+      when('/operators/combining/and_then_when', {
+          templateUrl: 'prerendered/operators/combining/and_then_when.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 3,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
       when('/operators/combining/zip', {
         templateUrl: 'prerendered/operators/combining/zip.html',
         controller: 'buttonsController',
