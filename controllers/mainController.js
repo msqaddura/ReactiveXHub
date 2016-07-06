@@ -19,10 +19,10 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
             link : "/#operators",
             links: [
                 {
-                    title: "Creating",
-                    link: "/#operators/creating",
-                    hide:true,
+                    title: "Transforming",
+                    link: "/#operators/transforming",
                     links: [
+                        { title: "Buffer", link: "/#operators/transforming/buffer" },
                     ]
                 },
                 {
