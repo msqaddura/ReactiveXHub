@@ -9,7 +9,7 @@ RxHubController.controller('buttonsController', ['$scope', '$route', '$window', 
 
     $scope._initializer = {
         window: function () {
-            window.IN = [];
+            window.OBS = [];
             window.RESULT = [];
             window.NXT = function (value) {
                 $scope.$applyAsync(function () { $scope.rxHandler.onResult("onNext", value) });
@@ -72,7 +72,7 @@ RxHubController.controller('buttonsController', ['$scope', '$route', '$window', 
             })
         },
         run: function () {
-            window.IN = $scope.emittingSubjects.map(sub=>sub.subject);
+            window.OBS = $scope.emittingSubjects.map(sub=>sub.subject);
             try {
                 eval($scope.codeMirror.getValue());
             } catch (e) {
