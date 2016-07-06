@@ -35,11 +35,11 @@
             <span class="mdl-layout-title"><a href="#/home">ReactiveX Hub</a></span>
             <nav class="mdl-navigation">
                 <ul ng-repeat="link in links"  ng-init="top=link">
-                    <a href="{{link.link}}" class="mdl-navigation__link top">{{link.title}}</a>
-                    <ul ng-repeat="link in top.links" ng-init="middle=link">
-                       <a class="mdl-navigation__link middle" href="{{link.link}}">{{link.title}}</a>
-                        <ul ng-repeat="link in middle.links">
-                            <a class="mdl-navigation__link low" href="{{link.link}}">{{link.title}}</a>
+                    <a href="{{link.link}}" class="mdl-navigation__link top" ng-hide="{{link.hide}}">{{link.title}}</a>
+                    <ul ng-repeat="link in top.links" ng-init="middle=link" ng-hide="{{link.hide || top.hide}}">
+                       <a class="mdl-navigation__link middle" href="{{link.link}}" ng-hide="{{link.hide}}">{{link.title}}</a>
+                        <ul ng-repeat="link in middle.links" ng-hide="{{link.hide || middle.hide}}">
+                            <a class="mdl-navigation__link low" href="{{link.link}}" ng-hide="{{link.hide}}">{{link.title}}</a>
                         </ul>
                     </ul>
                 </ul>

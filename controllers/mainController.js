@@ -9,124 +9,49 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
 
     $scope.links = [
         {
-            title:"One",
-            link : "operators",
+            title: "Observable",
+            link: "/#observable",
             links: [
-                {
-                    title: "Two",
-                    link: "",
-                    links: [
-                        { title: "Three", link: "/#zip" },
-                        { title: "Four", link: "/#merge" }
-                    ]
-                },
-                {
-                    title: "Five",
-                    link: "",
-                    links: [
-                        { title: "Six", link: "/#zip" },
-                        { title: "Seven", link: "/#merge" }
-                    ]
-                }
             ]
         },
         {
-            title: "Eight",
-            link: "operators",
+            title:"Operators",
+            link : "/#operators",
             links: [
                 {
-                    title: "Nine",
-                    link: "",
+                    title: "Creating",
+                    link: "/#operators/creating",
+                    hide:true,
                     links: [
-                        { title: "Ten", link: "/#zip" },
-                        { title: "Eleven", link: "/#merge" }
                     ]
                 },
                 {
-                    title: "Six",
-                    link: "",
+                    title: "Combining",
+                    link: "/#operators/combining",
                     links: [
-                        { title: "Zip", link: "/#zip" },
-                        { title: "Merge", link: "/#merge" }
+                        { title: "Merge", link: "/#operators/combining/merge" },
+                        { title: "Zip", link: "/#operators/combining/zip" }
                     ]
                 }
             ]
         },
         {
             title: "Single",
-            link: "operators",
+            link: "/#single",
             links: [
-                {
-                    title: "Create Observables",
-                    link: "",
-                    links: [
-                        { title: "Zip", link: "/#zip" },
-                        { title: "Merge", link: "/#merge" }
-                    ]
-                },
-                {
-                    title: "Combining Observables",
-                    link: "",
-                    links: [
-                        { title: "Zip", link: "/#zip" },
-                        { title: "Merge", link: "/#merge" }
-                    ]
-                }
             ]
         },
         {
             title: "Subject",
-            link: "operators",
+            link: "/#subject",
             links: [
-                {
-                    title: "Create Observables",
-                    link: "",
-                    links: [
-                        { title: "Zip", link: "/#zip" },
-                        { title: "Merge", link: "/#merge" }
-                    ]
-                },
-                {
-                    title: "Combining Observables",
-                    link: "",
-                    links: [
-                        { title: "Zip", link: "/#zip" },
-                        { title: "Merge", link: "/#merge" }
-                    ]
-                }
             ]
         },
         {
-            title: "Schendular",
-            link: "operators",
+            title: "Schenduler",
+            link: "/#scheduler",
             links: [
-                {
-                    title: "Create Observables",
-                    link: "",
-                    links: [
-                        { title: "Zip", link: "/#zip" },
-                        { title: "Merge", link: "/#merge" }
-                    ]
-                },
-                {
-                    title: "Combining Observables",
-                    link: "",
-                    links: [
-                        { title: "Zip", link: "/#zip" },
-                        { title: "Merge", link: "/#merge" }
-                    ]
-                }
             ]
         }
-    ]
-    $scope.linksx = [
-
-
-        {
-            title: "Create Observables", level: 1, links: [
-            ]
-        },
-        { title: "Zip", url: "/#zip",level:2 },
-        { title: "Merge", url: "/#merge",level:2 }
     ]
 }]);
