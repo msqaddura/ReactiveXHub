@@ -4,17 +4,18 @@
 @red:#ed4545;
 @blue:#3b78d3;
 @fake:white;
+@majorColor:rgb(0,150,136);
+@minorColor:rgb(255,171,64);
 .loop(@counter) when (@counter > 0) {
   .loop((@counter - 1));    // next iteration
     .mdl-badge[data-badge="@{counter}"] {
         @fit:(@counter - 1)*@badgeSize;
     left: unit(@fit, px);
- 
-  } 
+  }
 }
 .badgeHolder{
 //.loop(100); // launch the loop
-  .mdl-badge{ 
+  .mdl-badge{
       position:relative;
       display:inline-block;
       top:-4px;
@@ -76,10 +77,6 @@ button{
 }
 
 }
-html{
-}
-
-
 
 @keyframes flash {
     from {opacity: 1;}
@@ -162,8 +159,23 @@ html{
     height:auto;
 }
 
-
 nav.mdl-navigation ul{
     padding:0!important;
     margin:0!important;
+    & a{
+        &.top{
+            color:rgba(0,0,0,.66)!important;
+            font-weight:bold;
+            padding:6px 20px!important;
+        }
+        &.middle{
+            color:rgba(0,0,0,.66)!important;
+            font-style:italic;
+            padding:6px 30px!important;
+        }
+        &.low{
+            color:@majorColor!important;
+            padding:6px 40px!important;
+        }
+    }
 }

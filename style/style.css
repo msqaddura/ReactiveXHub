@@ -139,3 +139,17 @@ nav.mdl-navigation ul {
   padding: 0!important;
   margin: 0!important;
 }
+nav.mdl-navigation ul a.top {
+  color: rgba(0, 0, 0, 0.66) !important;
+  font-weight: bold;
+  padding: 6px 20px!important;
+}
+nav.mdl-navigation ul a.middle {
+  color: rgba(0, 0, 0, 0.66) !important;
+  font-style: italic;
+  padding: 6px 30px!important;
+}
+nav.mdl-navigation ul a.low {
+  color: #009688 !important;
+  padding: 6px 40px!important;
+}
