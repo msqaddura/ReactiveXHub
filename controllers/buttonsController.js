@@ -103,12 +103,14 @@ RxHubController.controller('buttonsController', ['$scope', '$route', '$window', 
     $scope.rxHandler = {
         onNext: function (index, value, type) {
             type = type || "onNext";
+            value = JSON.parse(value);
             $scope.rxHandler.onFake($scope.emittingSubjects[index].emissions);
             $scope.emittingSubjects[index].subject.onNext(value);
             $scope.emittingSubjects[index].emissions.push({ offset: ++$scope.lastEmitted, value: value, type: type });
         },
         onError: function (index, value, type) {
             type = type || "onError";
+            vale = JSON.parse(value);
             $scope.rxHandler.onFake($scope.emittingSubjects[index].emissions);
             $scope.emittingSubjects[index].emissions.push({ offset: ++$scope.lastEmitted, value: value, type: type });
             $scope.emittingSubjects[index].subject.onError(value);
@@ -116,6 +118,7 @@ RxHubController.controller('buttonsController', ['$scope', '$route', '$window', 
         },
         onCompleted: function (index, value, type) {
             type = type || "onCompleted";
+            value = JSON.parse(value);
             $scope.rxHandler.onFake($scope.emittingSubjects[index].emissions);
             $scope.emittingSubjects[index].subject.onCompleted(value);
             $scope.emittingSubjects[index].emissions.push({ offset: ++$scope.lastEmitted, value: value, type: type });
