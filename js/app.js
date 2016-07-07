@@ -129,14 +129,6 @@ RxHubApp.config(['$routeProvider',
               href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
           }
       }).
-      when('/operators/combining/zip', {
-        templateUrl: 'prerendered/operators/combining/zip.html',
-        controller: 'buttonsController',
-        data: {
-            prefill: 2,
-            href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
-        }
-      }).
       when('/operators/combining/merge', {
           templateUrl: 'prerendered/operators/combining/merge.html',
           controller: 'buttonsController',
@@ -144,6 +136,22 @@ RxHubApp.config(['$routeProvider',
               prefill: 2,
               href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
           }
+      }).
+      when('/operators/combining/startWith', {
+          templateUrl: 'prerendered/operators/combining/startWith.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/combining/zip', {
+        templateUrl: 'prerendered/operators/combining/zip.html',
+        controller: 'buttonsController',
+        data: {
+            prefill: 2,
+            href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+        }
       }).
       when('/operators/creating', {
           templateUrl: 'prerendered/operators/creating/default.html',
