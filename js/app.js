@@ -59,6 +59,65 @@ RxHubApp.config(['$routeProvider',
               href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
           }
       }).
+      when('/operators/filtering', {
+          templateUrl: 'prerendered/operators/combining/default.html',
+      }).
+      when('/operators/filtering/debounce', {
+          templateUrl: 'prerendered/operators/filtering/debounce.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/filtering/distinct', {
+          templateUrl: 'prerendered/operators/filtering/distinct.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/filtering/elementAt', {
+          templateUrl: 'prerendered/operators/filtering/elementAt.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/filtering/filter', {
+          templateUrl: 'prerendered/operators/filtering/filter.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/filtering/first', {
+          templateUrl: 'prerendered/operators/filtering/first.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/filtering/ignoreElements', {
+          templateUrl: 'prerendered/operators/filtering/ignoreElements.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/filtering/last', {
+          templateUrl: 'prerendered/operators/filtering/last.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
       when('/operators/combining', {
           templateUrl: 'prerendered/operators/combining/default.html',
       }).

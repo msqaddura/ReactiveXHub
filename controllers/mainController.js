@@ -30,6 +30,19 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
                     ]
                 },
                 {
+                    title: "Filtering",
+                    link: "/#operators/filtering",
+                    links: [
+                        { title: "debounce", link: "/#operators/filtering/debounce" },
+                        { title: "distinct", link: "/#operators/filtering/distinct" },
+                        { title: "elementAt", link: "/#operators/filtering/elementAt"},
+                        { title: "filter", link: "/#operators/filtering/filter" },
+                        { title: "first", link: "/#operators/filtering/first" },
+                        { title: "ignoreElements", link: "/#operators/filtering/ignoreElements" },
+                        { title: "last", link: "/#operators/filtering/last", hide:true }
+                    ]
+                },
+                {
                     title: "Combining",
                     link: "/#operators/combining",
                     links: [
