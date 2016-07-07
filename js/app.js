@@ -12,6 +12,7 @@ RxHubApp.config(['$routeProvider',
       when('/observable', {
           templateUrl: 'prerendered/observable/default.html',
       }).
+
       when('/operators', {
           templateUrl: 'prerendered/operators/default.html',
       }).
@@ -23,6 +24,38 @@ RxHubApp.config(['$routeProvider',
           controller: 'buttonsController',
           data: {
               prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/transforming/flatMap', {
+          templateUrl: 'prerendered/operators/transforming/flatMap.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/transforming/groupBy', {
+          templateUrl: 'prerendered/operators/transforming/groupBy.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/transforming/map', {
+          templateUrl: 'prerendered/operators/transforming/map.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/transforming/scan', {
+          templateUrl: 'prerendered/operators/transforming/scan.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 1,
               href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
           }
       }).
