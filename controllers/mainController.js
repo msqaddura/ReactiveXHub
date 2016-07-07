@@ -51,6 +51,14 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
                         { title: "startWith", link: "/#operators/combining/startWith" },
                         { title: "zip", link: "/#operators/combining/zip" }
                     ]
+                },
+                {
+                    title: "Conditional",
+                    link: "/#operators/conditional",
+                    links: [
+                        { title: "skipUntil", link: "/#operators/conditional/skipUntil" },
+                        { title: "takeUntil", link: "/#operators/conditional/takeUntil" }
+                    ]
                 }
             ]
         },

@@ -153,6 +153,25 @@ RxHubApp.config(['$routeProvider',
             href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
         }
       }).
+      when('/operators/conditional', {
+          templateUrl: 'prerendered/operators/conditional/default.html',
+      }).
+      when('/operators/conditional/skipUntil', {
+          templateUrl: 'prerendered/operators/conditional/skipUntil.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/conditional/takeUntil', {
+          templateUrl: 'prerendered/operators/conditional/takeUntil.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
       when('/operators/creating', {
           templateUrl: 'prerendered/operators/creating/default.html',
       }).
