@@ -53,6 +53,14 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
                     ]
                 },
                 {
+                    title: "Error Handling",
+                    link: "/#operators/error_handling",
+                    links: [
+                        { title: "catch", link: "/#operators/error_handling/catch" },
+                        { title: "retry", link: "/#operators/error_handling/retry" }
+                    ]
+                },
+                {
                     title: "Conditional",
                     link: "/#operators/conditional",
                     links: [

@@ -153,6 +153,25 @@ RxHubApp.config(['$routeProvider',
             href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
         }
       }).
+      when('/operators/error_handling', {
+          templateUrl: 'prerendered/operators/error_handling/default.html',
+      }).
+      when('/operators/error_handling/catch', {
+          templateUrl: 'prerendered/operators/error_handling/catch.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
+      when('/operators/error_handling/retry', {
+          templateUrl: 'prerendered/operators/error_handling/retry.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
       when('/operators/conditional', {
           templateUrl: 'prerendered/operators/conditional/default.html',
       }).
