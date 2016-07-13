@@ -1,12 +1,11 @@
 {
-  "name": "RxPlayGround",
+  "name": "ReactiveXHub",
   "authors": [
     "Mohamad Qaddura <msqaddura@outlook.com>"
   ],
-  "description": "",
+  "description": "DIY Tutorial for ReactiveX in Javascript",
   "main": "",
   "moduleType": [],
-  "license": "MIT",
   "homepage": "",
   "ignore": [
     "**/.*",
