@@ -26,16 +26,13 @@
 var haystack = OBS [0];
 var needle = haystack.elementAt(4);
 needle.subscribe((value=>{
-    console.log(value)
-    window.NXT(value);
+    console.log(value);
   }),
   (err=>{
-    console.warn(err)
-    window.ERR(err)
+    console.warn(err);
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>

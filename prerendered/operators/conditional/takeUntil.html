@@ -27,16 +27,13 @@ var goodPeople = OBS[0];
 var badThings = OBS[1];
 goodPeople.takeUntil(badThings)
   .subscribe((value=>{
-    console.log(value)
-    window.NXT(value);
+    console.log(value);
   }),
   (err=>{
-    console.warn(err)
-    window.ERR(err)
+    console.warn(err);
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>
