@@ -27,17 +27,14 @@
 var mistake = OBS[0].retry(2)
 
 mistake.subscribe((value=>{
-    console.log(value)
-    window.NXT(value);
+    console.log(value);
   }),
   (err=>{
     console.warn(err)
-    alert("didn't I tell you not to click twice -.-")
-    window.ERR(err)
+    alert("didn't I tell you not to click twice -.-");
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>

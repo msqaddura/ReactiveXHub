@@ -25,16 +25,13 @@
 <textarea id="snippet" style="display:none">
 Rx.Observable.zip(OBS[0],OBS[1])
   .subscribe((value=>{
-    console.log(value)
-    window.NXT(value);
+    console.log(value);
   }),
   (err=>{
-    console.warn(err)
-    window.ERR(err)
+    console.warn(err);
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>

@@ -27,16 +27,13 @@ var alternate = OBS [0];
 
 alternate.scan((prev,curr)=>prev ^ curr)
   .subscribe((value=>{
-    console.log(value)
-    window.NXT(value);
+    console.log(value);
   }),
   (err=>{
-    console.warn(err)
-    window.ERR(err)
+    console.warn(err);
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>

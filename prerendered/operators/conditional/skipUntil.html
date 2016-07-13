@@ -27,16 +27,13 @@ var badPeople = OBS[0];
 var goodThings = OBS[1];
 badPeople.skipUntil(goodThings)
   .subscribe((value=>{
-    console.log(value)
-    window.NXT(value);
+    console.log(value);
   }),
   (err=>{
-    console.warn(err)
-    window.ERR(err)
+    console.warn(err);
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>
