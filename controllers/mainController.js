@@ -12,6 +12,14 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
             title: "Observable",
             link: "/#observable",
             links: [
+                {
+                    title: "car",
+                    link: "",
+                    isFake:true,
+                    links: [
+                         { title: "create", link: "/#observable/create" }
+                    ]
+                }
             ]
         },
         {

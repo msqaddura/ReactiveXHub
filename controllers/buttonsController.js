@@ -92,8 +92,6 @@ RxHubController.controller('buttonsController', ['$scope', '$route', '$window', 
             $scope._initializer.clean();
         },
         refresh: function () {
-
-            console.info($scope.result);
             $scope.result = RESULT;
         }
 

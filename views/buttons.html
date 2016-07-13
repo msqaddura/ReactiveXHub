@@ -1,6 +1,6 @@
 ﻿<div id="UI">
     <div class="mdl-shadow--2dp mdl-card">
-        <div id="in">
+        <div class="mdl-card__supporting-text">
             <div ng-repeat="subject in emittingSubjects track by $index" ng-init="valid = true ;value = true;errorOrCompleted=false;HACKS.MDL();">
 
                 <!-- <input type="text" ng-model="value" ng-change="valid=isJSON(value)" />-->
@@ -15,13 +15,13 @@
                 </form>
 
 
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab next" title="onNext(Value)" ng-click="rxHandler.onNext($index,value)" ng-disabled="!valid || STATE !== STATES.RUNNING || subject.subject.isStopped">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab btn onNext"  title="onNext(Value)"   ng-click="rxHandler.onNext($index,value)" ng-disabled="!valid || STATE !== STATES.RUNNING || subject.subject.isStopped">
                     <i class="material-icons">navigate_next</i>
                 </button>
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab complete" title="onCompleted()" ng-click="errorOrCompleted=true;rxHandler.onCompleted($index,value)" ng-disabled="!valid || STATE !== STATES.RUNNING || subject.subject.isStopped">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab btn onCompleted" title="onCompleted()"   ng-click="errorOrCompleted=true;rxHandler.onCompleted($index,value)" ng-disabled="!valid || STATE !== STATES.RUNNING || subject.subject.isStopped">
                     <i class="material-icons">done_all</i>
                 </button>
-                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab error" title="onError(err)" ng-click="errorOrCompleted=true;rxHandler.onError($index,value)" ng-disabled="!valid || STATE !== STATES.RUNNING || subject.subject.isStopped">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab btn onError" title="onError(err)"   ng-click="errorOrCompleted=true;rxHandler.onError($index,value)" ng-disabled="!valid || STATE !== STATES.RUNNING || subject.subject.isStopped">
                     <i class="material-icons">error_outline</i>
                 </button>
 

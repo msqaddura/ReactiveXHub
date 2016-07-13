@@ -33,15 +33,12 @@
 Rx.Observable.merge(OBS[0],OBS[1])
   .subscribe((value=>{
     console.log(value)
-    window.NXT(value);
   }),
   (err=>{
     console.warn(err)
-    window.ERR(err)
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>

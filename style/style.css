@@ -26,13 +26,13 @@
 button i {
   color: white;
 }
-button.next {
+button.onNext {
   background-color: #3b78d3;
 }
-button.complete {
+button.onCompleted {
   background-color: #50cc56;
 }
-button.error {
+button.onError {
   background-color: #ed4545;
 }
 #controlPanel {
@@ -59,8 +59,10 @@ button.error {
   width: 100%;
   position: relative;
 }
-#UI #in {
-  padding: 16px;
+#UI .mdl-card .mdl-card__supporting-text {
+  max-width: 100%;
+  width: auto;
+  min-height: 115px;
 }
 @keyframes flash {
   from {

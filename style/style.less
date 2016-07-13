@@ -43,9 +43,9 @@
 
 button{
     i {color:white;}
-    &.next{background-color:@blue}
-    &.complete{background-color:@green}
-    &.error{background-color:@red}
+    &.onNext{background-color:@blue}
+    &.onCompleted{background-color:@green}
+    &.onError{background-color:@red}
 }
 #controlPanel{
     display:inline-block;
@@ -71,10 +71,12 @@ button{
             .mdl-card{
             width:100%;
             position:relative;
+                        .mdl-card__supporting-text{
+                max-width:100%;
+                width:auto;
+                min-height:115px;
+            }
         }
-#in{
-    padding:16px;
-}
 
 }
 

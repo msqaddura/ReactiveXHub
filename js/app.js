@@ -12,6 +12,14 @@ RxHubApp.config(['$routeProvider',
       when('/observable', {
           templateUrl: 'prerendered/observable/default.html',
       }).
+      when('/observable/create', {
+          templateUrl: 'prerendered/observable/create.html',
+          controller: 'buttonsController',
+          data: {
+              prefill: 2,
+              href_ext: "https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/merge.md"
+          }
+      }).
 
       when('/operators', {
           templateUrl: 'prerendered/operators/default.html',
