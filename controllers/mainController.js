@@ -11,6 +11,7 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
         {
             title: "Observable",
             link: "/#observable",
+            hide:true,
             links: [
                 {
                     title: "car",
@@ -81,18 +82,21 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
         {
             title: "Single",
             link: "/#single",
+            hide:true,
             links: [
             ]
         },
         {
             title: "Subject",
             link: "/#subject",
+            hide:true,
             links: [
             ]
         },
         {
             title: "Schenduler",
             link: "/#scheduler",
+            hide:true,
             links: [
             ]
         }
