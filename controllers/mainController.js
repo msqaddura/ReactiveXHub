@@ -10,7 +10,7 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
     $scope.links = [
         {
             title: "Observable",
-            link: "/#observable",
+            link: "#observable",
             hide:true,
             links: [
                 {
@@ -18,84 +18,84 @@ RxHubController.controller('searchController', ['$scope', function ($scope) {
                     link: "",
                     isFake:true,
                     links: [
-                         { title: "create", link: "/#observable/create" }
+                         { title: "create", link: "#observable/create" }
                     ]
                 }
             ]
         },
         {
             title:"Operators",
-            link : "/#operators",
+            link : "#operators",
             links: [
                 {
                     title: "Transforming",
-                    link: "/#operators/transforming",
+                    link: "#operators/transforming",
                     links: [
-                        { title: "buffer", link: "/#operators/transforming/buffer" },
-                        { title: "flatMap", link: "/#operators/transforming/flatMap" },
-                        { title: "groupBy", link: "/#operators/transforming/groupBy", hide: true },
-                        { title: "map", link: "/#operators/transforming/map"},
-                        { title: "scan", link: "/#operators/transforming/scan"}
+                        { title: "buffer", link: "#operators/transforming/buffer" },
+                        { title: "flatMap", link: "#operators/transforming/flatMap" },
+                        { title: "groupBy", link: "#operators/transforming/groupBy", hide: true },
+                        { title: "map", link: "#operators/transforming/map"},
+                        { title: "scan", link: "#operators/transforming/scan"}
                     ]
                 },
                 {
                     title: "Filtering",
-                    link: "/#operators/filtering",
+                    link: "#operators/filtering",
                     links: [
-                        { title: "debounce", link: "/#operators/filtering/debounce" },
-                        { title: "distinct", link: "/#operators/filtering/distinct" },
-                        { title: "elementAt", link: "/#operators/filtering/elementAt"},
-                        { title: "filter", link: "/#operators/filtering/filter" },
-                        { title: "first", link: "/#operators/filtering/first" },
-                        { title: "ignoreElements", link: "/#operators/filtering/ignoreElements" },
-                        { title: "last", link: "/#operators/filtering/last", hide:true }
+                        { title: "debounce", link: "#operators/filtering/debounce" },
+                        { title: "distinct", link: "#operators/filtering/distinct" },
+                        { title: "elementAt", link: "#operators/filtering/elementAt"},
+                        { title: "filter", link: "#operators/filtering/filter" },
+                        { title: "first", link: "#operators/filtering/first" },
+                        { title: "ignoreElements", link: "#operators/filtering/ignoreElements" },
+                        { title: "last", link: "#operators/filtering/last", hide:true }
                     ]
                 },
                 {
                     title: "Combining",
-                    link: "/#operators/combining",
+                    link: "#operators/combining",
                     links: [
-                        { title: "and/thenDo/when", link:"/#operators/combining/and_then_when"},
-                        { title: "merge", link: "/#operators/combining/merge" },
-                        { title: "startWith", link: "/#operators/combining/startWith" },
-                        { title: "zip", link: "/#operators/combining/zip" }
+                        { title: "and/thenDo/when", link:"#operators/combining/and_then_when"},
+                        { title: "merge", link: "#operators/combining/merge" },
+                        { title: "startWith", link: "#operators/combining/startWith" },
+                        { title: "zip", link: "#operators/combining/zip" }
                     ]
                 },
                 {
                     title: "Error Handling",
-                    link: "/#operators/error_handling",
+                    link: "#operators/error_handling",
                     links: [
-                        { title: "catch", link: "/#operators/error_handling/catch" },
-                        { title: "retry", link: "/#operators/error_handling/retry" }
+                        { title: "catch", link: "#operators/error_handling/catch" },
+                        { title: "retry", link: "#operators/error_handling/retry" }
                     ]
                 },
                 {
                     title: "Conditional",
-                    link: "/#operators/conditional",
+                    link: "#operators/conditional",
                     links: [
-                        { title: "skipUntil", link: "/#operators/conditional/skipUntil" },
-                        { title: "takeUntil", link: "/#operators/conditional/takeUntil" }
+                        { title: "skipUntil", link: "#operators/conditional/skipUntil" },
+                        { title: "takeUntil", link: "#operators/conditional/takeUntil" }
                     ]
                 }
             ]
         },
         {
             title: "Single",
-            link: "/#single",
+            link: "#single",
             hide:true,
             links: [
             ]
         },
         {
             title: "Subject",
-            link: "/#subject",
+            link: "#subject",
             hide:true,
             links: [
             ]
         },
         {
             title: "Schenduler",
-            link: "/#scheduler",
+            link: "#scheduler",
             hide:true,
             links: [
             ]
