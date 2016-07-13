@@ -26,16 +26,13 @@
 var redAlert = OBS[0].catch(err=>alert('So you did click on the red button'));
 
 redAlert.subscribe((value=>{
-    console.log(value)
-    window.NXT(value);
+    console.log(value);
   }),
   (err=>{
-    console.warn(err)
-    window.ERR(err)
+    console.warn(err);
   }),
   (()=>{
     console.info('completed');
-    window.CMP();
   })
 );
 </textarea>
