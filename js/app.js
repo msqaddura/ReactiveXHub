@@ -212,6 +212,6 @@ RxHubApp.config(['$routeProvider',
           templateUrl: 'prerendered/scheduler/default.html',
       }).
       otherwise({
-          templateUrl: '/prerendered/home.html'
+          templateUrl: 'prerendered/home.html'
       });
   }]);
