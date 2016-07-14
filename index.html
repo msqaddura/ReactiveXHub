@@ -73,6 +73,7 @@
 
     <script src="lib/rx.all.js"></script>
     <script>
+        window.ANON = [];
         Rx.Observable.prototype.subscribe = function (oOrOnNext, onError, onCompleted) {
             return this._subscribe(typeof oOrOnNext === 'object' ?
             oOrOnNext :
