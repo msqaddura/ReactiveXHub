@@ -9,6 +9,13 @@ RxHubController.controller('buttonsController', ['$scope', '$route', '$window', 
 
     $scope._initializer = {
         window: function () {
+            if (window.ANON[0])
+                window.ANON.forEach(anon=> {
+                    anon.dispose();
+                    delete anon;
+                });
+
+            window.ANON = [];
             window.OBS = [];
             window.RESULT = [];
             window.NXT = function (value) {
