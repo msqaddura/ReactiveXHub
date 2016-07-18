@@ -111,6 +111,22 @@ li {
   display: inline-block;
   position: relative;
 }
+.card-holder {
+  padding: 10px 5px 0px 5px;
+  max-width: 100%;
+}
+.card-holder .mdl-card {
+  width: 100%;
+  position: relative;
+}
+.card-holder .mdl-card .mdl-card__supporting-text {
+  max-width: 100%;
+  width: auto;
+  min-height: 115px;
+}
+.card-holder .title {
+  margin: 0;
+}
 #definition {
   padding: 10px 5px 0px 5px;
   max-width: 100%;
@@ -126,6 +142,7 @@ li {
 }
 #definition #title {
   margin: 0;
+  color: #ffab40;
 }
 .seperator {
   width: 80%;
@@ -154,4 +171,18 @@ nav.mdl-navigation ul a.middle {
 nav.mdl-navigation ul a.low {
   color: #009688 !important;
   padding: 6px 40px!important;
+}
+.zoneHolder {
+  padding: 4px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.zoneHolder .zone {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 4px;
+}
+#logo {
+  height: 120px;
+  margin-left: 25px;
+  margin-top: 10px;
 }

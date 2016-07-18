@@ -6,6 +6,8 @@
 @fake:white;
 @majorColor:rgb(0,150,136);
 @minorColor:rgb(255,171,64);
+@middleColor:#fff;
+@fontMainColor:rgba(0,0,0,.54);
 .loop(@counter) when (@counter > 0) {
   .loop((@counter - 1));    // next iteration
     .mdl-badge[data-badge="@{counter}"] {
@@ -129,6 +131,28 @@ li {
 }
 
 
+
+    .card-holder{
+        padding:10px 5px 0px 5px;
+        max-width:100%;
+        .mdl-card{
+            width:100%;
+            position:relative;
+            .mdl-card__supporting-text{
+                max-width:100%;
+                width:auto;
+                min-height:115px;
+            }
+        }
+    .title{
+        margin:0;
+        //color:@minorColor
+    }
+    #text{
+
+    }
+    }
+
     #definition{
         padding:10px 5px 0px 5px;
         max-width:100%;
@@ -180,4 +204,23 @@ nav.mdl-navigation ul{
             padding:6px 40px!important;
         }
     }
+}
+
+
+.zoneHolder{
+     padding:4px;
+     color:@fontMainColor;
+.zone{
+    background-color:@middleColor;
+    border-radius:2px;
+    padding:4px;
+}}
+
+
+
+
+#logo{
+        height: 120px;
+    margin-left: 25px;
+    margin-top: 10px;
 }
