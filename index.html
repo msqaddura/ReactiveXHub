@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>ReactiveX Hub</title>
     <meta name="author" content="Mohamad Qaddura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <script src="lib/angular/angular.js"></script>
     <link rel="stylesheet" href="lib/codemirror/codemirror.css"/>
@@ -33,8 +35,8 @@
             </div>
         </header>
         <div class="mdl-layout__drawer" ng-controller="searchController">
-            <span class="mdl-layout-title"><a href="#/home"><img id="logo" src="content/img/pack.png" /></a></span>
-            <nav class="mdl-navigation">
+            <span class="mdl-layout-title"><a href="#/home"><img id="logo" src="content/img/Logo_By_Adam_Farhoud.png" /></a></span>
+            <nav class="mdl-navigation" id="navigator">
                 <ul ng-repeat="link in links"  ng-init="top=link">
                     <a href="{{link.link}}" class="mdl-navigation__link top" ng-hide="{{link.hide || link.isFake}}">{{link.title}}</a>
                     <ul ng-repeat="link in top.links" ng-init="middle=link" ng-hide="{{link.hide || top.hide}}">
