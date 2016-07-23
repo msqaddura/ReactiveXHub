@@ -142,7 +142,6 @@ li {
 }
 #definition #title {
   margin: 0;
-  color: #ffab40;
 }
 .seperator {
   width: 80%;
@@ -182,7 +181,9 @@ nav.mdl-navigation ul a.low {
   padding: 4px;
 }
 #logo {
-  height: 120px;
-  margin-left: 25px;
+  height: 160px;
   margin-top: 10px;
+}
+#navigator {
+  padding-top: 0px;
 }
