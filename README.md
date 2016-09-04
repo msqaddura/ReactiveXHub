@@ -6,3 +6,7 @@ Thank you all for cloning, viewing, and reaching this project. I am glad to know
 In order to to improve my code and reach more developers (students and contributors) I have decided to move this project to an author-free (no msqaddura) repository, hence to a new organization 'Dev-Hubs'.
 
 This means that we are now a group of fully fledged people trying to make the future of e-learning ;)
+
+[Repository](https://github.com/Dev-Hubs/ReactiveXHub) : https://github.com/Dev-Hubs/ReactiveXHub 
+
+[Website] (https://dev-hubs.github.io/ReactiveXHub) : https://dev-hubs.github.io/ReactiveXHub/
